@@ -9,19 +9,19 @@
         <div class="mb-3 row">
             <label for="nim" class="col-sm-2 col-form-label">NIM</label>
             <div class="col-sm-10">
-                <input type="number" class="form-control" name='nim' value="{{ Session::get('nim') }}" id="nim">
+                <input type="number" class="form-control" name='nim' value="{{ old('nim') }}" id="nim">
             </div>
         </div>
         <div class="mb-3 row">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name='nama' value="{{ Session::get('nama') }}" id="nama">
+                <input type="text" class="form-control" name='nama' value="{{ old('nama') }}" id="nama">
             </div>
         </div>
         <div class="mb-3 row">
             <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" name='jurusan' value="{{ Session::get('jurusan') }}" id="jurusan">
+                <input type="text" class="form-control" name='jurusan' value="{{ old('jurusan') }}" id="jurusan">
             </div>
         </div>
         <div class="mb-3 row">

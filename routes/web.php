@@ -19,4 +19,6 @@ Route::get('/', function () {
 });
 
 
-Route::resource('mahasiswa', mahasiswaConttroller::class);
+Route::resource('mahasiswa', mahasiswaConttroller::class)
+    ->except(['show'])
+    ->parameter('mahasiswa', 'mahasiswa:nim');
